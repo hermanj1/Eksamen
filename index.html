@@ -11,71 +11,96 @@
     <title>Forside</title>
 </head>
 <body>
-    <header>
-        <!--Navbaren-->
-        <nav>
-            <span>
-                <!-- Logoen oppe i hjørnet som tar deg tilbake til forsiden-->
-                <a href="index.html">Logo</a>
-            </span>
+    <div id="grid-contain"> <!-- Her setter jeg opp grid for siden -->
+        <header>
+            <!--Navbaren-->
+            <nav>
+                <span>
+                    <!-- Logoen oppe i hjørnet som tar deg tilbake til forsiden-->
+                    <a href="index.html"><img src="img/logo1.png" alt="logo for iloceam pleam"></a>
+                </span>
 
-            <ul>
-                <!-- Linker til home siden -->
-                <li><a href="index.html">Home</a></li>
-                <!-- Linker til portfolio siden -->
-                <li><a href="products.html">Portfolio</a></li>
-                <!-- Linker til about siden -->
-                <li><a href="about.html">About</a></li>
-                <!-- Lager snarvei til Contact på about siden-->
-                <li><a href="#contact">Contact</a></li>
+                <ul>
+                    <!-- Linker til home siden -->
+                    <li><a href="index.html">Home</a></li>
+                    <!-- Linker til portfolio siden -->
+                    <li><a href="products.html">Portfolio</a></li>
+                    <!-- Linker til about siden -->
+                    <li><a href="about.html">About</a></li>
+                    <!-- Lager snarvei til Contact på about siden-->
+                    <li><a href="#contact" class="read-more-btn">Contact</a></li>
 
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="headline">
-            <h1>Compeling headline</h1>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            <!-- Snarvei til our services -->
-            <li><a href="#services-forside">Read more about our services</a></li>
-        </section>
-        <h2>Enganging subheading. What can you help your visitor with</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-        <section>
-            <h3>About our company</h3>
+                </ul>
+            </nav>
+            <section id="headline">
+                <h1>Compeling headline</h1>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <!-- Snarvei til our services -->
+                <a href="#services-forside" class="read-more-btn">Read more about our services</a>
+            </section>
+        </header>
+        <main>
+            
+            <h2>Enganging subheading. What can you help your visitor with</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            <li><a href="about.html">Read more about us</a></li>
-        </section>
-        <h3>Our services</h3>
-        <section id="services-forside">
-            <h3>Our services</h3>
-            <article>
-                <h3>Branding</h3>
+            <section id="about-section">
+                <img src="https://placehold.co/400x400" alt="Grey placeholder pic">
+                <h3>About our company</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <!-- Lager id for siden denne knappen skal være annerledes fra de andre -->
+                <a href="about.html" id="more-about">Read more about us</a>
+            </section>
+            
+            <section id="services-forside">
+                 <!-- Ser i videoen at alle elementene i service står som branding men syntes det så finere ut når hvert ikon hadde et eget navn slik som i skissen -->
+                <h3>Our services</h3>
+                <article>
+                    <i class="fa-solid fa-users"></i>
+                    <h3>Branding</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </article>
+                <article>
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                    <h3>Design</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-            </article>
-            <article>
-                <h3>Design</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-            </article>
-            <article>
-                <h3>Development</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-            </article>
-            <article>
-                <h3>Support</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-            </article>
-        </section>
+                </article>
+                <article>
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Development</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </article>
+                <article>
+                    <i class="fa-solid fa-wifi"></i>
+                    <h3>Support</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </article>
+            </section>
+            <section id="newsletter">
+                <!-- Hentet fra forelesningsnotater 4/10-->
+                <form>
+                    <label for="email-signup">Sign up for our newsletter</label>
+                    <div class="signup">
+                        <input type="text" id="email-signup" placeholder="Nora@epost.no">
+                        <button type="button">Sign me up!</button>
+                    </div>
+                </form>
 
-    </main>
-    <footer>
-        <ul> 
-            <!-- Social icons fra fontawesome -->
-            <li><i class="fa-brands fa-facebook"></i></li>
-            <li><i class="fa-brands fa-instagram"></i></li>
-            <li><i class="fa-brands fa-linkedin"></i></li>
-        </ul>
+            </section>
 
-    </footer>
+        </main>
+        <footer>
+            <div>
+            <a href="index.html"><img src="img/logo1.png" alt="logo for iloceam pleam"></a>
+            </div>
+            <p>Companyrights Companyname 2023</p>
+            <ul> 
+                <!-- Social icons fra fontawesome -->
+                <li><a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></a></i></li>
+                <li><a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></a></i></li>
+                <li><a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></a></i></li>
+            </ul>
+
+        </footer>
+    </div>
 </body>
 </html>

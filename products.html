@@ -4,36 +4,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!-- Linker til fontawesome-->
+    <link href="css/font/css/fontawesome.css" rel="stylesheet">
+    <link href="css/font/css/brands.css" rel="stylesheet">
+    <link href="css/font/css/solid.css" rel="stylesheet">
     <title>Portfolio</title>
 </head>
 <body>
-    <header>
-        <!--Navbaren-->
-        <nav>
-            <span>
-                <!-- Logoen oppe i hjørnet som tar deg tilbake til forsiden-->
-                <a href="index.html">Logo</a>
-            </span>
+    <div id="grid-contain">
+        <header>
+            <!--Navbaren-->
+            <nav>
+                <span>
+                    <!-- Logoen oppe i hjørnet som tar deg tilbake til forsiden-->
+                    <a href="index.html"><img src="img/logo1.png" alt="logo for iloceam pleam"></a>
+                </span>
 
-            <ul>
-                <!-- Linker til home siden -->
-                <li><a href="index.html">Home</a></li>
-                <!-- Linker til portfolio siden -->
-                <li><a href="products.html">Portfolio</a></li>
-                <!-- Linker til about siden -->
-                <li><a href="about.html">About</a></li>
-                <!-- Lager snarvei til Contact på about siden-->
-                <li><a href="#contact">Contact</a></li>
+                <ul>
+                    <!-- Linker til home siden -->
+                    <li><a href="index.html">Home</a></li>
+                    <!-- Linker til portfolio siden -->
+                    <li><a href="products.html">Portfolio</a></li>
+                    <!-- Linker til about siden -->
+                    <li><a href="about.html">About</a></li>
+                    <!-- Lager snarvei til Contact på about siden-->
+                    <li><a href="#contact" class="read-more-btn">Contact</a></li>
 
-            </ul>
-        </nav>
-    </header>
-    <main>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <div id="bakgrunn">
+                    <!-- Lager denne for bakgrunnsbildet bak Portfolio-->
+                </div>
+                <h1>Portfolio</h1>
+            </section>
         
+            <section>
+                <h2>Explore more jobs</h2>
+                <a href="#branding" class="portfolio-btn">Branding</a>
+                <a href="#design" class="portfolio-btn">Design</a>
+                <a href="#dev" class="portfolio-btn">Development</a>
+            </section>
+            
+            <section id="branding">
+                <h2>Branding</h2>
+                <article>
+                    <img src="https://placehold.co/400x400" alt="Grey placeholder pic">
+                    <h3>consectetur adipiscing elit</h3>
+                </article>
+                <article>
+                    <img src="https://placehold.co/400x400" alt="Grey placeholder pic">
+                    <h3>consectetur adipiscing elit</h3>
+                </article>
+                <article>
+                    <img src="https://placehold.co/400x400" alt="Grey placeholder pic">
+                    <h3>consectetur adipiscing elit</h3>
+                </article>
+                <article>
+                    <img src="https://placehold.co/400x400" alt="Grey placeholder pic">
+                    <h3>consectetur adipiscing elit</h3>
+                </article>
+            </section>
+            <section id="design">
+                <h2>Design</h2>
+                <article>
+                    <img src="https://placehold.co/400x400" alt="Grey placeholder pic">
+                    <h3>consectetur adipiscing elit</h3>
+                </article>
+                <article>
+                    <img src="https://placehold.co/400x400" alt="Grey placeholder pic">
+                    <h3>consectetur adipiscing elit</h3>
+                </article>
+                <article>
+                    <img src="https://placehold.co/400x400" alt="Grey placeholder pic">
+                    <h3>consectetur adipiscing elit</h3>
+                </article>
+            </section>
+            <section id="dev">
+                <h2>Development</h2>
+                <article>
+                    <img src="https://placehold.co/400x400" alt="Grey placeholder pic">
+                    <h3>consectetur adipiscing elit</h3>
+                </article>
+                <article>
+                    <img src="https://placehold.co/400x400" alt="Grey placeholder pic">
+                    <h3>consectetur adipiscing elit</h3>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <div>
+            <a href="index.html"><img src="img/logo1.png" alt="logo for iloceam pleam"></a>
+            </div>
+            <p>Companyrights Companyname 2023</p>
+            <ul> 
+                <!-- Social icons fra fontawesome -->
+                <li><a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></a></i></li>
+                <li><a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></a></i></li>
+                <li><a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></a></i></li>
+            </ul>
 
-    </main>
-    <footer>
-
-    </footer>
+        </footer>
+    </div>
 </body>
 </html>

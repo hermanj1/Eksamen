@@ -4,35 +4,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!-- Linker til fontawesome-->
+    <link href="css/font/css/fontawesome.css" rel="stylesheet">
+    <link href="css/font/css/brands.css" rel="stylesheet">
+    <link href="css/font/css/solid.css" rel="stylesheet">
     <title>About</title>
 </head>
 <body>
-    <header>
-        <!--Navbaren-->
-        <nav>
-            <span>
-                <!-- Logoen oppe i hjørnet som tar deg tilbake til forsiden-->
-                <a href="index.html">Logo</a>
-            </span>
+    <div id="grid-contain">
+        <header>
+            <!--Navbaren-->
+            <nav>
+                <span>
+                    <!-- Logoen oppe i hjørnet som tar deg tilbake til forsiden-->
+                    <a href="index.html"><img src="img/logo1.png" alt="logo for iloceam pleam"></a>
+                </span>
 
-            <ul>
-                <!-- Linker til home siden -->
-                <li><a href="index.html">Home</a></li>
-                <!-- Linker til portfolio siden -->
-                <li><a href="products.html">Portfolio</a></li>
-                <!-- Linker til about siden -->
-                <li><a href="about.html">About</a></li>
-                <!-- Lager snarvei til Contact på about siden-->
-                <li><a href="#contact">Contact</a></li>
+                <ul>
+                    <!-- Linker til home siden -->
+                    <li><a href="index.html">Home</a></li>
+                    <!-- Linker til portfolio siden -->
+                    <li><a href="products.html">Portfolio</a></li>
+                    <!-- Linker til about siden -->
+                    <li><a href="about.html">About</a></li>
+                    <!-- Lager snarvei til Contact på about siden-->
+                    <li><a href="#contact" class="read-more-btn">Contact</a></li>
+
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <p>Company name</p>
+                <h2>About our company</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <a href="#contact" class="read-more-btn">Get in touch with us</a>
+            </section>
+            <!-- Ser i videoen at alle elementene i service står som branding men syntes det så finere ut når hvert ikon hadde et eget navn slik som i skissen -->
+            <section id="services-about">
+                <h3>Our services</h3>
+                <article>
+                    <i class="fa-solid fa-users"></i>
+                    <h3>Branding</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </article>
+                <article>
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                    <h3>Design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </article>
+                <article>
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Development</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </article>
+                <article>
+                    <i class="fa-solid fa-wifi"></i>
+                    <h3>Support</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </article>
+            </section>
+            <section id="clients">
+                <h3>Some of our clients</h3>
+                <img src="img/logo1.png" alt="logo for iloceam pleam">
+                <img src="img/logo2.png" alt="logo med zikkzakk merke">
+                <img src="img/logo3.png" alt="logo med skrift Aca">
+            </section>
+
+            <section id="contact">
+                <h3>Contact us</h3>
+                <h3>Send us message</h3>
+                <form>
+                    <label for="name">Name</label><br>
+                    <input type="text" id="name" placeholder="Ola Nordmann..">
+
+                    <label for="subject">Subject</label><br>
+                    <input type="text" id="subject" placeholder="Branding..">
+                
+                    <label for="message">Message</label>
+                    <textarea id="message"></textarea>
+
+                    <input type="submit" value="Send message">
+                </form>
+            </section>
+            <section>
+                <h3>Contact information</h3>
+                <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut </p>
+                
+                <p>B R A veien 4, 1757 Halden</p>
+                <p>69 60 80 00</p>
+                <p>postmottak@hiof.no</p>
+            </section>
+            <section id="map">
+                <h4>Her kommer det kart</h4>
+            </section>
+        </main>
+        <footer>
+            <div>
+            <a href="index.html"><img src="img/logo1.png" alt="logo for iloceam pleam"></a>
+            </div>
+            <p>Companyrights Companyname 2023</p>
+            <ul> 
+                <!-- Social icons fra fontawesome -->
+                <li><a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></a></i></li>
+                <li><a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></a></i></li>
+                <li><a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></a></i></li>
             </ul>
-        </nav>
-    </header>
-    <main>
-        
 
-    </main>
-    <footer>
-
-    </footer>
+        </footer>
+    </div>
 </body>
 </html>
