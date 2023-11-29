@@ -13,9 +13,10 @@ html{
 
 /* Forside css */
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     background-color: #fff;
+    max-width: 1600px;
 }
 
 header{
@@ -28,6 +29,7 @@ header{
 header nav{
     margin: 1rem 0 0 0;
     padding: 0;
+    
 }
 
 header nav ul{
@@ -50,18 +52,33 @@ main{
 
 
 #headline{
-    padding: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #ececec;
+}
+
+#subheading{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 #about-section{
     background-color: #e6bd43;
     padding: 3rem;
+    text-align: left;
+}
+
+#about-section img{
+    width: 90%;
+    height: auto;
 }
 
 #about-section p {
-    text-align: left;
     margin-bottom: 3rem;
-    padding: 0rem 3rem 0 3rem;
 }
 
 #more-about{
@@ -72,13 +89,34 @@ main{
     padding: 1rem;
 }
 
-form{
+#services{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1.5rem;
+    justify-content: space-around;
+}
+
+#services h3{
+    width: 100%;
+    text-align: center;
+}
+
+#services article{
+    max-width: 300px;
+    width: 100%;
+    min-width: 200px;
+}
+
+#newsletter form{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     background-color: #efefef;
-    padding: 2rem 0 2rem 0;
 }
+
 
 #newsletter input {
     width: 250px;
@@ -154,16 +192,230 @@ footer a{
 } 
 
 /*Products siden*/
+
+#bakgrunn{
+    background-color: #efefef;
+    padding: 2rem;
+}
 .portfolio-btn{
-    padding: 1rem;
+    padding: 0.5rem;
     color: #000;
     text-decoration: none;
-    margin: 0.5rem;
+    margin: 0.3rem;
+    border: 2px solid #000;
+    text-align: left;
 }
 
+.underline{
+    border-bottom: 3px solid #e6bd43;
+    text-align: left;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 90%;
+    margin-left: 1.5rem;
+}
+
+#branding{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#branding article img{
+    width: 90%;
+    height: auto;
+}
+
+#design{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#design article img{
+    width: 90%;
+    height: auto;
+}
+
+#dev{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#dev article img{
+    width: 90%;
+    height: auto;
+}
+
+#branding article{
+    margin: 1rem;
+}
+
+#design article{
+    margin: 1rem;
+}
+
+#dev article{
+    margin: 1rem;
+}
+
+
+
 /*About siden*/
+#company-name{
+    /*
+    Bakgrunns bilde loader ikke inn, derfor velger jeg og legge til farger. Har sjekket med chatGPT, men fikk ikke godt svar.
+    background-image: url(/img/computer-2982270_1280.jpg);
+    background-size: auto;
+    */
+    background-color: #9c9c9c;
+    padding: 3rem;
+}
+
+#company-name article{
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 1rem;
+}
+
 #clients{
     background-color: #e6bd43;
     padding: 1rem;
     margin: 0;
+}
+
+#contact{
+    background-color: #efefef;
+    padding-top: 2rem;
+}
+
+#contact div form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#contact div article{
+    padding: 2rem;
+
+}
+
+
+#submit-knapp{
+    padding: 0.5rem;
+}
+#name{
+    border-style: none;
+    padding: 0.5rem;
+}
+
+#subject{
+    border-style: none;
+    padding: 0.5rem;
+}
+
+#message{
+    border-style: none;
+    padding: 0.5rem;
+}
+/*kart*/
+
+#map{
+    height: 35vh;
+    width: 100%;
+}
+/* implementerer media querries*/ 
+@media only screen and (min-width: 600px){
+
+    #grid-contain{
+        grid-template-areas: "header header header" "main main main" "footer footer footer";
+    }
+
+    header nav span{
+        float: left;
+    }
+    
+    header nav ul{
+        float: right;
+        margin: 0;
+        padding-right: 1rem;
+    }
+
+    header nav ul li{
+        display: inline-block;
+    }
+
+    header nav{
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1.5rem;
+    }
+
+    footer div{
+        float: left;
+    }
+
+    footer ul{
+        float: right;
+    }
+
+
+
+    /*Forsiden*/
+
+    #about-section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #about-section article{
+        padding-left: 2rem;
+    }
+
+    #about-section img{
+        width: 200%;
+        height: auto;
+        padding-right: 2rem;
+    }
+
+    #about-section p{
+        width: 80%;
+        font-size: 0.8rem;
+    }
+
+    #more-about{
+        font-size: 0.7rem;
+    }
+
+    #contact div{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    #contact div article{
+        text-align: left;
+    }
+
+    #contact div form{
+        padding-left: 2rem;
+    }
+
 }

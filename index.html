@@ -9,6 +9,11 @@
     <link href="css/font/css/brands.css" rel="stylesheet">
     <link href="css/font/css/solid.css" rel="stylesheet">
     <title>Forside</title>
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <div id="grid-contain"> <!-- Her setter jeg opp grid for siden -->
@@ -28,49 +33,55 @@
                     <!-- Linker til about siden -->
                     <li><a href="about.html">About</a></li>
                     <!-- Lager snarvei til Contact på about siden-->
-                    <li><a href="#contact" class="read-more-btn">Contact</a></li>
+                    <li><a href="about.html#contact" class="read-more-btn">Contact</a></li>
 
                 </ul>
             </nav>
-            <section id="headline">
+        </header>
+        <main>
+             <section id="headline">
                 <h1>Compeling headline</h1>
                 <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                 <!-- Snarvei til our services -->
                 <a href="#services-forside" class="read-more-btn">Read more about our services</a>
             </section>
-        </header>
-        <main>
-            
-            <h2>Enganging subheading. What can you help your visitor with</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+            <section id="subheading">
+                <h2>Enganging subheading. What can you help your visitor with</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </section>
+
             <section id="about-section">
                 <img src="https://placehold.co/400x400" alt="Grey placeholder pic">
-                <h3>About our company</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                <!-- Lager id for siden denne knappen skal være annerledes fra de andre -->
-                <a href="about.html" id="more-about">Read more about us</a>
+                <article>
+                    <h3>About our company</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <!-- Lager id for siden denne knappen skal være annerledes fra de andre -->
+                    <a href="about.html" id="more-about">Read more about us</a>
+                </article>
             </section>
             
-            <section id="services-forside">
+            <section id="services">
                  <!-- Ser i videoen at alle elementene i service står som branding men syntes det så finere ut når hvert ikon hadde et eget navn slik som i skissen -->
                 <h3>Our services</h3>
                 <article>
-                    <i class="fa-solid fa-users"></i>
+                    <!-- Legger til 2xl for å øke størrelsen på ikonene-->
+                    <i class="fa-solid fa-users fa-2xl"></i>
                     <h3>Branding</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 </article>
                 <article>
-                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                    <i class="fa-solid fa-cloud-arrow-up fa-2xl"></i>
                     <h3>Design</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 </article>
                 <article>
-                    <i class="fa-solid fa-code"></i>
+                    <i class="fa-solid fa-code fa-2xl"></i>
                     <h3>Development</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 </article>
                 <article>
-                    <i class="fa-solid fa-wifi"></i>
+                    <i class="fa-solid fa-wifi fa-2xl"></i>
                     <h3>Support</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 </article>
@@ -94,10 +105,10 @@
             </div>
             <p>Companyrights Companyname 2023</p>
             <ul> 
-                <!-- Social icons fra fontawesome -->
-                <li><a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></a></i></li>
-                <li><a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></a></i></li>
-                <li><a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></a></i></li>
+                <!-- Social icons fra fontawesome. Øker størrelsen på ikonene med fa-xl -->
+                <li><a href="https://www.facebook.com"><i class="fa-brands fa-facebook fa-xl"></i></a></li>
+                <li><a href="https://www.instagram.com"><i class="fa-brands fa-instagram fa-xl"></i></a></li>
+                <li><a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin fa-xl"></i></a></li>
             </ul>
 
         </footer>

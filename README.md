@@ -1,6 +1,17 @@
 # Eksamen
 Eksamen i webutvikling23
 
+Ambisjonsnivå:
+Jeg har bestemt meg for å sikte meg inn for karakter B. Jeg har bestemt meg for B fordi ut fra tidligere erfaringer i faget og ved å ha sett gjennom demovideoen føler jeg at dette vil være innenfor rekkevidde, samtidig som jeg føler jeg må strekke meg litt for å lære meg ny informasjon. 
+
+Ved senere vurdering så ser jeg at jeg vil slite med å nå målene for B-kravet. Jeg forsøker fortsatt å implementere noen elementer fra B-kravet. Ettersom jeg ikke når B-kravet ved å oppfylle alle kravene der flytter jeg målet mitt til å nå C-kravet istede.
+
+Antagelser og tolkninger:
+Selv om demo-videoen viser desktop versjonen før mobil, antar jeg at vi skal gjennomføre Mobile-first prinsippet. Dette gjør jeg ut fra at det er sånn vi har bygd nettsteder tidligere i faget. 
+
+Hva jeg skulle ønske jeg fikk gjort bedre:
+- Skulle gjerne ha kommentert flere steder i koden 
+
 
 Kilder som er brukt under eksamen:
 - https://www.w3schools.com/howto/howto_css_contact_form.asp <!-- Brukte denne til å finne ut om kontaktskjema på about siden -->
